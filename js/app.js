@@ -3,19 +3,14 @@ $(document).ready(function () {
   const $projectImg = $('.project-img').find('img');
 
   const arrIconsTech = [
-    { tool : 'jquery' , description : 'Librería de Javascript'},
-    { tool : 'firebase' , description : 'Plataforma para el uso de webs y Apps'},
-    { tool : 'javascript' , description : 'Lenguajes de Programación'},
-    { tool : 'node js' , description : 'Gestor de paquetes NPM'},
-    { tool : 'git' , description : 'Software de control de versiones'},
-    { tool : 'react' , description : 'Librería Javascript'},
-    { tool : 'redux' , description : 'Librería Javascript'},
-    { tool : 'sass' , description : 'Preprocesador CSS'},
-    { tool : 'gulp' , description : 'Automatizador de tareas'},
-    { tool : 'webpack' , description : 'Empaquetador de módulos y archivos'},
-    { tool : 'photoshop' , description : 'Programa para editar imágenes'},
-    { tool : 'svg' , description : 'formato de gráficos vectoriales 2D de HTML5'},
-    { tool : 'android' , description : ''}
+    { tool : 'javascript' , description : 'Coding lenguaje'},
+    { tool : 'HTML' , description : 'Markup language'},
+    { tool : 'CSS' , description : 'Style sheet language'},
+    { tool : 'flask' , description : 'Web Framework'},
+    { tool : 'git' , description : 'Version control software'},
+    { tool : 'sass' , description : 'CSS Processor'},
+    { tool : 'photoshop' , description : 'Image edition software'},
+
   ]
 
   $('.modal-info').hide();
@@ -84,7 +79,7 @@ $(document).ready(function () {
 
   // Evento para whastapp
   $('#wpp').on('click', function(){
-    window.open("https://api.whatsapp.com/send?phone=51971313111&text=I'm%20interested%20in%20your%20portfolio");
+    window.open("https://api.whatsapp.com/send?phone=542616360234&text=I'm%20interested%20in%20your%20portfolio");
   })
 
   // modal
