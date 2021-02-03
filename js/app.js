@@ -4,6 +4,8 @@ $(document).ready(function () {
 
   const arrIconsTech = [
     { tool : 'javascript' , description : 'Coding lenguaje'},
+    { tool : 'Python' , description : 'Coding lenguaje'},
+    { tool : 'C' , description : 'Coding lenguaje'},
     { tool : 'HTML' , description : 'Markup language'},
     { tool : 'CSS' , description : 'Style sheet language'},
     { tool : 'flask' , description : 'Web Framework'},
