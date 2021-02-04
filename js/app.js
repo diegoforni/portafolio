@@ -13,6 +13,8 @@ $(document).ready(function () {
     { tool : 'git' , description : 'Version control software'},
     { tool : 'sass' , description : 'CSS Processor'},
     { tool : 'photoshop' , description : 'Image edition software'},
+    { tool : 'Illustrator' , description : 'Vector graphics editor'},
+    { tool : 'Experience Design' , description : 'User experience design tool'},
 
   ]
 
