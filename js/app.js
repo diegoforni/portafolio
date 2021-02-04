@@ -2,6 +2,7 @@ $(document).ready(function () {
   let $menuHome = $('#menu-home-container');
   const $projectImg = $('.project-img').find('img');
 
+  // Tech skills
   const arrIconsTech = [
     { tool : 'javascript' , description : 'Coding lenguaje'},
     { tool : 'Python' , description : 'Coding lenguaje'},
@@ -17,21 +18,18 @@ $(document).ready(function () {
 
   $('.modal-info').hide();
 
-  // Creando un clon del menu justo alado del original
+  
+  // Clon of the menu next to it
   $('#menu-home-container').addClass('original').clone().insertAfter('#menu-home-container').addClass('cloned')
     .css('position', 'fixed').css('top', '0').css('margin-top', '-1px').css('z-index', '500').removeClass('original').hide();
-
-  scrollIntervalID = setInterval(stickIt, 10);
-
-  $('.original').find("a").css({
-    "color": "#fff"
-  });
+  
+  scrollIntervalID = setInterval(stickIt, 100);
 
   function stickIt() {
     var orgElementPos = $('.original').offset();
 
     orgElementTop = orgElementPos.top;
-    // console.log(orgElementTop)  //700         
+    // console.log(orgElementTop)  //700       
 
     if ($(window).scrollTop() >= (orgElementTop)) {
       // scrolled past the original position; now only show the cloned, sticky element.
@@ -51,18 +49,6 @@ $(document).ready(function () {
       $('.original').css('visibility', 'visible');
     }
   }
-  
-
-  let upWindow = function () {
-    // var el = document.getElementsByTagName('body');
-    var $el = ('body');
-    $el.scrollTop = 0;
-  }
-
-  let goToMenu = function () {
-    window.scrollTo(5, 0);
-  }
-
 // Adding icons
   arrIconsTech.map(index =>
     $('.tech-skills-box').append(
@@ -79,15 +65,12 @@ $(document).ready(function () {
     // console.log('callback - particles.js config loaded');
   });
 
-  // Evento para whastapp
+  // Whastapp
   $('#wpp').on('click', function(){
     window.open("https://api.whatsapp.com/send?phone=542616360234&text=I'm%20interested%20in%20your%20portfolio");
   })
 
-  // modal
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-  })
+
   console.log($('.modal-info'));
 
   // Images project
@@ -99,8 +82,6 @@ $(this).next().next().append(`
 
 `)
   }
-
-  // $projectImg.on('click', showInfo);
 
 
 });
