@@ -49,6 +49,9 @@ hr {
 
 .navbar {
   border: none; }
+html {
+  scroll-behavior: smooth;
+}
 
 .nav-watch .nav-watch > .active > a > p, .nav-watch .nav-watch > .active > a > p:focus, .nav-watch .nav-watch > .active > a > p:hover {
   font-weight: 500; }
