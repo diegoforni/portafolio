@@ -60,7 +60,7 @@ particlesJS("particles-js", {
       "random": false,
       "straight": false,
       "out_mode": "out",
-      "bounce": false,
+      "bounce": true,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -96,8 +96,8 @@ particlesJS("particles-js", {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 1
+        "distance": 150,
+        "duration": 0.6
       },
       "push": {
         "particles_nb": 4
